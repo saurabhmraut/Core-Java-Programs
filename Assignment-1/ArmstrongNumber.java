@@ -24,7 +24,7 @@ class ArmstrongNumber{
     public static void main(String[] args) {
 
         //check no is armstron no or not
-        int n = 155;
+        int n = 153;
         ArmstrongNumber obj = new ArmstrongNumber();
         obj.checkArmstrong(n);
         
