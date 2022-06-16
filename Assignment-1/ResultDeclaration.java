@@ -11,10 +11,7 @@ public class ResultDeclaration {
 
         int s1 = sc.nextInt(); 
         int s2 = sc.nextInt(); 
-        int s3 = sc.nextInt();
- 
-            
-
+        int s3 = sc.nextInt(); 
         if(s1>=60){
             if(s2>=60){
                 if(s3>=60){
