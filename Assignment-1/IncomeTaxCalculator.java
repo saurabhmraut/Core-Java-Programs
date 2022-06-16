@@ -9,7 +9,7 @@ public class IncomeTaxCalculator {
         System.out.println("Enter the Income amount : ");
         Scanner sc = new Scanner(System.in);
         long Income  = sc.nextLong();
-
+        sc.close();
         System.out.print("Tax Payable is : ");
         if(Income < 180000){
             System.out.println("Nill");

@@ -2,16 +2,12 @@ import java.util.ArrayList;
 
 /**
  * ArmstronNumberInRange
- */
-
-
-public class ArmstronNumberInRange {
-
+ */ 
+public class ArmstronNumberInRange { 
     public static int cube(int number) {
         return number*number*number;
-    }
-
-    public static boolean checkArmstrong(int n) {
+    } 
+    static boolean checkArmstrong(int n) {
         int sum = 0;
         int no = n;
         while(no>0){
@@ -30,20 +26,16 @@ public class ArmstronNumberInRange {
     public static void main(String[] args) {
 
         int start =100,end =999;
-        ArrayList <Integer> ArmstrongNumbers =  new ArrayList<Integer>();
-        ArmstronNumberInRange Obj = new ArmstronNumberInRange();
-
+        ArrayList <Integer> ArmstrongNumbers =  new ArrayList<Integer>();  
         for(int i = start;i<=end;i++){
-            boolean res = Obj.checkArmstrong(i);
+            boolean res = checkArmstrong(i);
             if(res){
                 ArmstrongNumbers.add(i);
             }
         }
 
         for (Integer integer : ArmstrongNumbers) {
-            System.out.print(integer+" ");
-            
-        }
-        
+            System.out.print(integer+" "); 
+        } 
     }    
 }
