@@ -26,6 +26,7 @@ public class ShopMain {
             switch(itemId){
                 case 1 :
                     DessertItem candy1 = new Candy("peanut Butter", 2, 4.2);
+                    System.out.println("Candy inserted");
                     continue;
                 case 2 :
                     DessertItem cookie1 = new Cookie("Cookies",4,4.99);
@@ -37,12 +38,14 @@ public class ShopMain {
                     System.out.println( "Wrong choice selected");
 
                 }
-            }while(itemId==0);
+
+                System.out.println("DATA ADDED SUCCESSFULL"+role);
+            }while(itemId!=0);
         }
         else if(role==2){
             System.out.println("Welcome Shopping ");
         }
-        }while(role==0);
+        }while(role!=0);
         
     
 }
