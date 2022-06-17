@@ -44,9 +44,10 @@ public class ShopMain {
         }
         else if(role==2){
             System.out.println("Welcome Shopping ");
+            System.out.println();
+
+
         }
-        }while(role!=0);
-        
-    
+        }while(role!=0); 
 }
 }
