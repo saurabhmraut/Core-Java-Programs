@@ -1,20 +1,8 @@
-
+import java.util.Date;
 
 /**
   * Assignment4
-  */
-
-  
-// class KeyValue<T1, T2> {
-
-//     public static KeyValue<String, String> with(String string, String string2) {
-//         return null;
-//     }
-
-//     public KeyValue<String, String> setKey(String string1) {
-//         return null;
-//     } }
-
+  */ 
 class Student <K,V> {
     private K key;
     private V value;
@@ -38,19 +26,26 @@ class Student <K,V> {
     } 
     
 }
+
+
  public class Assignment4 {
  
-    public static void main(String[] args) { 
-        // KeyValue<String, String> kv= KeyValue.with("1","A computer science portal");
-        // KeyValue<String, String> myObj = kv.setKey("GeeksforGeeks"); 
-        // System.out.println(myObj);  
+    public static void main(String[] args) {  
         Student<String, String> student = new Student<>();
         student.setKey("Name");
-        student.setValue("Saurabh");
-        
+        student.setValue("Saurabh"); 
         String key = student.getKey();
-        String value = student.getValue();
-        System.out.println("{"+key+":"+value+"}");
+        String value = student.getValue(); 
+        System.out.println(key+" : "+value);
+
+
+        // Q 2
+        Student<String, Date>  std1 = new Student<>();
+        std1.setKey("Today is");
+        std1.setValue(new java.util.Date());
+        String key1 = std1.getKey();
+        Date value1 = std1.getValue();
+        System.out.println(key1+" : " +value1);
 
     }
  }
