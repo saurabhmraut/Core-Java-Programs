@@ -8,7 +8,7 @@ import javafx.scene.transform.Scale;
 public class ShopMain {
 
     public static void main(String[] args) {
-        int role =0;
+        int role = 0;
         Scanner sc = new Scanner(System.in);
         do{
         System.out.println("Enter the role : 1 : Owner   2 : Customer"  );
