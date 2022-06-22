@@ -15,16 +15,11 @@ public class RemoveOddLengthStrings {
         list.add("Harshal");
         list.add("Ramkisan");
         list.add("Aadesh");
-        System.out.println();
-        for (String string : list) {
-            System.out.print(string+"  "); 
-        }
-        System.out.println();
+        System.out.println("Original list"); 
+        System.out.println(list);  
+        System.out.println("List after removing old lenght words ");
         list.removeIf((str) -> (str.length()%2 !=0));
-        for (String string : list) {
-            System.out.print(string+ "  ");
-            
-        }
+        System.out.println(list);
 
     }
 }
