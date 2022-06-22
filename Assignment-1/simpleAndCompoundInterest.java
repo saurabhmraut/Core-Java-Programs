@@ -29,7 +29,7 @@ public class  simpleAndCompoundInterest {
         int time = sc.nextInt();  
         sc.close();
         System.out.println( "Simple interest is : "+ SimpleInterest(principle, rate, time));
-        System.out.printf( "Simple interest is %.2f : ", compoundInterest(principle, rate, time));
+        System.out.printf( "Compound interest is %.2f : ", compoundInterest(principle, rate, time));
 
         
         
