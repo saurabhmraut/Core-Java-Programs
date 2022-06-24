@@ -31,14 +31,6 @@ class StoreDataInFiles{
                     try {
                         Files.writeString(Path.of(path),price+ "\n", StandardOpenOption.APPEND);
                         System.out.println("Price Has been saved to the file "); 
-//                        if(path1.length()!=0) {
-//                        	// total =  Files.readString(Path.of(path1)); 
-//                        	 total =Integer.parseInt( Files.readString(Path.of(path1)));
-//                        	 total+=price;
-//                             Files.writeString(Path.of(path1),total+"\n", StandardOpenOption.APPEND);
-//                        }else {
-//                        	Files.writeString(Path.of(path1),price+"\n", StandardOpenOption.CREATE);
-//                        }
                         
                     } catch (IOException e) {
                     	System.out.println(e.getMessage());
